@@ -1,0 +1,26 @@
+# Tickers de ações. Use sufixo ".SA" para ações da B3 (ex: "PETR4.SA").
+tickers:
+  - "AAPL"
+  - "NKE"
+  - "GOOGL"
+  - "AMZN"
+
+# Intervalo de datas para backtesting (formato YYYY-MM-DD)
+start_date: "2015-01-01"
+end_date: "2022-12-31"
+
+# Número de carteiras aleatórias geradas pelo método Monte Carlo
+n_portfolios: 100000
+
+# Taxa livre de risco anualizada (ex: 0.045 = 4,5% a.a.)
+risk_free_rate: 0.045
+
+# Semente para reprodutibilidade dos resultados (null = aleatório)
+random_seed: 42
+
+# Fator de anualização (252 = dias úteis por ano)
+annualization_factor: 252
+
+# Se true, salva o gráfico como PNG em vez de exibir na tela
+save_plot: false
+output_path: "results/"
